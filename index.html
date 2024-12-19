@@ -27,6 +27,18 @@
 				top: 0;
 				z-index: 1000;
 			}
+		header .nav-toggle{
+			display:none;
+			flex-direction:column;
+			cursor:pointer;
+			gap:5px;
+		}
+
+		header .nav-toggle span { width:25px;
+					 height:3px;
+					 background:#fff;
+					 border-radius:5px;} 
+		
 			header .logo{ font-size:1.5rem;
 			font-weight:bold;
 			color:#ffb800; 
@@ -152,6 +164,20 @@ margin: 20px 0;
 footer{padding:10px;
        width:100%;
        text-align:center;}
+
+
+						    .nav-toggle{
+							    display:flex;}
+
+						    nav ul { position: absolute;
+							    top:100%;
+							    right:0;
+							    background:#111;
+							    width:100%;
+							    flex-direction:column;
+							    text-align: center;
+							    display:none;
+							   }
 						    footer p { font-size:14px;
 							      margin: 5px 0;
 							     }
@@ -180,6 +206,11 @@ text-align: center;}
 		    <li><a href="#blog">Blog</a></li>
 	</ul>
 </nav>
+	<div class="nav-toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
 	</header>
 	<section id="home" class="home">
 		<div class="home-content">
